@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>元素练习</title>
+    <style>
+        #name{
+            background-color:#0000ff;
+        }
+        [for=sex]{
+            color: #0f0;
+        }
+        [for=favourite4]{
+            color: red;
+        }
+        #img1{
+            width: 200px;
+            margin-left: 60px;
+            margin-top: -15px;
+        }
+        #email{
+            background-color: #ff00ff;
+        }
+        [for=SET]{
+            font-family: 方正兰亭超细黑简体;
+            font-size: 80px;
+        }
+        #p1{
+            color: blue;
+        }
+        .list{
+            height: 400px;
+        }
+        .list-left{
+            float: left;
+        }
+        .list-center{
+            float: left;
+        }
+        .list-right{
+            width: 300px;
+            height: 400px;
+            float: left;
+        }
+        #img2{
+            width:300px;
+            height: 400px;
+        }
+        #test:checked+#div{
+            visibility: visible;
+        }
+        #focusButton1{
+            background:none;
+            border: none;
+        }
+        #focusButton1 .title{
+            width: 300px;
+            height: 25px;
+        }
+        #focusButton1 .inner{
+            width: 300px;
+            height: 150px;
+            background-color: #000;
+            visibility: hidden;
+        }
+        #focusButton1:focus{
+            outline: none;
+        }
+        #focusButton1:focus .inner{
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <h1>学员信息登记</h1>
+    <form>
+        <label for="name">姓名</label>:<input id="name" type="text" /><br />
+        <label for="sex">性别</label>:男<input id="sex" type="radio" name="sex" />
+        <label for="sex1">女</label>
+        <input id="sex1" type="radio" name="sex" /><br />
+        <label for="favourite1">爱好:</label><input id="favourite1" type="checkbox" />篮球
+        <label for="favourite2"></label><input id="favourite2" type="checkbox" />刷微博
+        <label for="favourite3"></label><input id="favourite3" type="checkbox" />购物
+        <input id="favourite4" type="checkbox" /><label for="favourite4">总结知识结构性能</label><br />
+        <label>头像:</label><br><img src="images/1.jpg" id="img1" /><br />
+        <label for="email">邮箱</label>:<input id="email" type="text" /><br />
+        <label for="set1">所在地</label>:<select id="set1">
+            <option>四川</option>
+        </select>
+        <label for="set2"></label><select id="set2">
+        <option>成都</option>
+        </select>
+        <label for="set3"></label><select id="set3">
+        <option>双流</option>
+        </select>
+        <label for="set4"></label><select id="set4">
+        <option>某某街道</option>
+        </select><br />
+        <label for="SET">详细地址</label>:<input id="SET" type="text" /><br />
+    </form>
+    <div class="list">
+        <div class="list-left">
+            <p id="p1">考过的证书:</p><br />
+            <br />
+            <br />
+            <br />
+            <p>其他：</p><br />
+            <br />
+            <br />
+            <br />
+            <p>数学成绩：</p><br />
+            <br />
+            <p>空气湿度：</p>
+        </div>
+        <div class="list-center">
+            <br />
+            <ul>
+                <li>计算机登记证</li><br />
+                <li>好人证</li><br />
+                <li>学位证</li>
+            </ul>
+            <br />
+            <ol start="5" type="I">
+                <li>大学英语四级证</li>
+                <li>证书</li>
+                <li>优秀团员</li>
+                <li>五好学生证</li>
+            </ol>
+            <label for="number"></label><input id="number" type="number" /><br />
+            <br />
+            <br />
+            <br />
+            <label for="water"></label><input id="water" type="range" />
+        </div>
+        <div class="list-right">
+            <img src="images/www.jpg" id="img2"/>
+        </div>
+    </div>
+    <div id="div">
+    <button id="focusButton1">
+        <div class="title">
+            点我啊
+        </div>
+        <div  class="inner">
+
+        </div>
+    </button>
+    </div>
+    <br />
+    <input type="submit" value="提 交" /><input type="button" value="取 消" /><br />
+</body>
+</html>

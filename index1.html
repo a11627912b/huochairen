@@ -1,0 +1,151 @@
+<html>
+<head>
+	<title>
+		我的第一个网页
+	</title>
+	<style>
+		h1{
+			color:red;font-size:14px;
+		}
+		p{
+			color:#00f
+		}
+		p{
+			font-family:"微软雅黑";font-size:32px;
+		}
+		h1,h2,h3{
+			color:blue;
+		}
+		body{
+			font-family:Verdana,sans-serif;
+		}
+		li span{
+			font-style:italic;
+			font-weight:normal;
+		}
+		h2 span{
+			color:blue;
+		}
+		h2 > span{
+			color:rgb(100%,0%,0%);
+		}
+		hr + p{
+			margin-top:50px;
+			background-color:gray;
+		}
+		#imgIdentifier{
+			width:300px;
+		}
+		.list-item{
+			color:#00ff00;
+		}
+		#sideBar ul>li p{
+			color:green;
+			background-color:gray;
+		}
+		.list-data ul>li p{
+			color:green;
+			background-color:gray;
+		}
+	</style>
+</head>
+<body>
+	<div id="sideBar">
+	
+	
+		<div class="inner">
+			<ul>
+				<li>
+				<p>这是后代无序列表项</p>
+				</li>
+			</ul>
+		</div>
+		<ul>
+			<li>	
+				<p>这是子代无序列表</p>
+			</li>
+		</ul>
+	</div>
+	<div class="list-data">
+		<div class="inner">
+			<ul>
+				<li>
+					<p>这是后代无序列表项</p>
+				</li>
+			</ul>
+		</div>
+		<ul>
+			<li>
+				<p>这是子代无序列表</p>
+			</li>
+		</ul>
+	</div>
+	<h1>This is title</h1>
+	<h2>
+		<p>
+		<span>This is title</span>
+		</p>
+		<span>first children</span>
+	</h2>
+	<h3>This is title</h3>
+	<h4>This is title</h4>
+	<h5>This is title</h5>
+	<h6>This is title</h6>
+	<hr />
+	
+	<p>
+		&nbsp;&nbsp;This is paragraph,This is paragraph,<br />&nbsp;&nbsp;This is paragraph,This is paragraph,<br />&nbsp;&nbsp;This is paragraph,This is paragraph,<br />&nbsp;&nbsp;This is paragraph,This is paragraph,<br />&nbsp;&nbsp;This is paragraph,This is paragraph,<br />&nbsp;&nbsp;This is paragraph,This is paragraph,<br />&nbsp;&nbsp;This is paragraph,This is paragraph,<br />&nbsp;&nbsp;This is paragraph,This is paragraph,<br />&nbsp;&nbsp;This is paragraph,This is paragraph,<br />&nbsp;&nbsp;This is paragraph,This is paragraph,
+	</p>
+	<hr />
+	<ul>
+		<li><span>我是span里面的文字</span></li>
+		<li>Itme</li>
+		<li class="list-item">Itme</li>
+		<li>Itme</li>
+		<li>Itme</li>
+		<li>Itme</li>
+	</ul>
+	<ol start="50" type="a">
+		<li>Itme</li>
+		<li class="list-item">Itme</li>
+		<li>Itme</li>
+		<li>Itme</li>
+		<li>Itme</li>
+		<li>Itme</li>
+	</ol>
+	<hr />
+	<a href="http://www.baidu.com" target="_blank"> 百度一下</a>
+	<img id="imgIdentifier" src="../images/1.jpg" alt="html教程"  title="图片提示文字" />
+	
+	<label>
+		I'm label
+	</label>
+	
+	<form action"#">
+		<label>用户名</label>: <input type="text" name="uesrName" /><br />
+		<label>密码</label>: <input type="password" name="passWord" /><br />
+		<label>确认密码</label>: <input type="password" name="confirmpassWord" /><br />
+		<label>邮箱</label>: <input type="email" name="email" /><br />
+		<label>地址</label>: 
+		<select>
+			<option selected>四川</option>
+			<option>广东</option>
+			<option>河北</option>
+			<option>河南</option>
+			<option>新疆</option>
+		</select><br />
+		<label>性别</label>:
+		<input type="radio" checked name="gender" />男
+		<input type="radio" name="gender" />女<br />
+		<label>爱好</label>:
+		<input type="checkbox" name="faorite" />魔兽世界
+		<input type="checkbox" name="faorite" />英雄联盟
+		<input type="checkbox" name="faorite" />骑马
+		<input type="checkbox" checked name="faorite" />射箭
+		<br />
+		<input type="submit" value="提交" />
+		<input type="button" value=	"取消" />
+	</form>
+	
+</body>
+</html>

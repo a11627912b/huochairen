@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器与属性值选择器</title>
+    <style>
+        [title]{
+            color: #fff;
+            background-color: #777;
+        }
+        [title=def]{
+            color: #00f;
+        }
+        [data-code]{
+            color: #0f0;
+            background-color: #000;
+        }
+        br+[for=goodsId]{
+            color: #f00;
+        }
+        #dataSubmitWrapper form label[for=goodsCode] {
+            color: red;
+        }
+        #dataSubmitWrapper form >label[for=goodsName]{
+            color: rgb(0,0,255);
+        }
+        #dataSubmitWrapper [for=goodsCode]+[for=goodsId ]{
+            color: blue;
+        }
+        #picture1{
+            width: 300px;
+        }
+        #isSecond~[for=isBox1]{
+            color: red;
+        }
+        a:link{
+            color: #00ff00;
+        }
+        a:hover{
+            text-decoration: none;
+            color: #f00;
+        }
+        a:active{
+            color: blue;
+        }
+        #focusText:focus{
+            background-color: #00f;
+        }
+        #focusButton:focus{
+            background-color: red;
+        }
+        #focusButton{
+            display:none;
+        }
+        #focusButton{
+            visibility: hidden;
+         }
+        #focusButton{
+            margin-left: -20px;
+        }
+        #div{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            visibility: hidden;
+        }
+        #test:checked+#div{
+            visibility: visible;
+        }
+        #test{
+            v1isibility: hidden;
+        }
+        #focusButton1{
+            background:none;
+            border: none;
+        }
+        #focusButton1 .title{
+            width: 300px;
+            height: 25px;
+        }
+        #focusButton1 .inner{
+            width: 300px;
+            height: 150px;
+            background-color: #000;
+            visibility: hidden;
+        }
+        #focusButton1:focus{
+            outline: none;
+        }
+        #focusButton1:focus .inner{
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS属性选择器</h1>
+    <p>段落</p>
+    <p title="abc">title-abc</p>
+    <p title="def">title-def</p>
+    <p data-code="ghi">data-code=ghi</p>
+    <hr />
+    <h2>示例3</h2>
+    <div id="dataSubmitWrapper" class="container">
+        <form action="#">
+            <label for="goodsCode">商品代码</label>:<input id="goodsCode" type="text" /><br />
+            <label for="goodsId">商品ID</label>:<input id="goodsId" type="text" /><br />
+            <label for="goodsName">商品名称</label>:<input id="goodsName" type="text" /><br />
+            <label for="isCustom">单选</label>:
+            <input type="radio" id="isCustom" checked name="custom" />1
+            <label for="isSecond"></label>
+            <input type="radio" id="isSecond" name="custom" />2<br />
+            <label for="isBox1">多选:</label>1<input type="checkbox" id="isBox1">
+            <label for="isBox2">2</label><input type="checkbox" id="isBox2"><br />
+            <label for="isSelect">下拉菜单</label>:<select id="isSelect" >
+            <option selected>猜猜下面还有吗</option>
+            <option >下拉菜单</option>
+            </select><br />
+            <input type="submit" value="提 交" /><input type="button" value="取 消" /><br />
+            <img src="images/1.jpg" id="picture1"><br />
+                <a href="#">本页面</a><br />
+            <label for="focusText">商品代码</label>:<input id="focusText" type="text" /><br />
+            <input type="submit" value="伪类" id="focusButton"/>
+            <label for="test">test</label><input id="test" type="checkbox" />
+            <div id="div">
+            </div>
+            <button id="focusButton1">
+                <div class="title">
+                    点我啊
+                </div>
+                <div  class="inner">
+
+                </div>
+            </button>
+        </form>
+    </div>
+</body>
+</html>
