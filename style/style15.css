@@ -1,0 +1,69 @@
+.text-container{
+    text-shadow: 0 0 5px #00f;
+    letter-spacing: 20px;
+    border-radius: 5px;
+}
+.break{
+    width: 500px;
+    height: auto;
+    border: 1px dotted #333;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+.break-auto{
+    word-wrap: break-word;/*文本自动换行*/
+    text-indent: 30px;/*文本缩进*/
+}
+.break input{
+    width: 200px;
+    text-indent: -30px;
+}/*对input元素适用*/
+.word-letter-spacing{
+    word-spacing: 30px;/*字间距*/
+    letter-spacing: 30px;/*行间距*/
+}
+.word-letter-spacing{
+    width: 500px;
+    height: 35px;
+    padding: 20px;
+    margin: 10px;
+    border: 1px dotted #000;
+    text-decoration: none;
+    /*text-decoration: line-through;*//*删除线*/
+    /*text-decoration: overline;*//*上划线*/
+    /*text-decoration: underline;*//*下划线*/
+}
+.no-wrap{
+    width: 300px;
+    height: auto;
+    border: 1px black solid;
+}
+.no-wrap .English{
+    text-overflow: ellipsis;
+    white-space: nowrap;/*取消自动换行*/
+    overflow: hidden;
+}
+.no-wrap .Chinese{
+    white-space: pre;/*识别多个空白字符*/
+}
+.font{
+    font-family: bole;
+}
+@font-face {
+    font-family: bole;
+    src: url(../fonts/伯乐自然萌体.ttf);
+}
+.font-faces{
+    width: 500px;
+    height: 300px;
+    border: 1px solid black
+}
+@font-face {
+    font-family: glyphicons;
+    src: url(../fonts/glyphicons-halflings-regular.ttf);
+}
+.font-faces span:before{
+    content: "\e005";
+    font-family: glyphicons;
+}

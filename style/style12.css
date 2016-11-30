@@ -62,3 +62,106 @@ h3:before{
 .count-num>li:nth-child(3n+1){
     background-color: blue;
 }
+.hover-before{
+    width: 80px;
+    height: auto;
+    position: relative;
+    left: 20px;
+    cursor: pointer;
+}
+.hover-before:hover::before,.hover-before:hover::after{
+    position: absolute;
+}
+.hover-before:hover::before{
+    content: "\5B";
+    left: -10px;
+}
+.hover-before:hover::after{
+    content: "\5D";
+}
+.kuang{
+    position: relative;
+    width: 70px;
+    left: 20px;
+    cursor: pointer;
+}
+.kuang>p:hover:before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: dashed 1px black;
+}
+.kuang>p:hover:after{
+    content: " ";
+    position: absolute;
+    top:-12%;
+    left: -11%;
+    width: 120%;
+    height: 120%;
+    border: solid 2px black;
+}
+.biankuang{
+    width: 100px;
+    height: 100px;
+    border-radius: 0px 00px 50px 30px;
+    border: solid 2px black;
+}
+
+.box-shadow{
+    box-shadow: 10px 10px 0 5px #888 ;/*内部阴影+inset*/
+    border: 1px solid#ff0000;
+    width: 200px;
+    height: 100px;
+}
+.border-img{
+    width: 100px;
+    height: 50px;
+    border: 15px dashed transparent;
+    border-image-source: url("../images/border.png");
+    border-image-repeat: round;
+    border-image-slice: 25 25 ;
+}
+.bg-img{
+    width: 200px;
+    height: 100px;
+    background-image: url("../images/cat1.png");
+    background-repeat: no-repeat;/*取消平铺*/
+    background-size: 180px 90px;
+    border: 1px solid #000;
+}
+.bg-origin{
+    width: 200px;
+    height: 230px;
+    background-image: url("../images/cat1.png");
+    margin-top: 15px;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    padding: 30px;
+    border: 20px solid rgba(0,0,0,0.5);
+    /*background-origin: border-box;!*定义到外边距*!*/
+    background-origin: content-box;/*定义到内容*/
+    /*background-origin: padding-box;!*定义到内边距*!*/
+}
+.bg-img-or{
+    width: 200px;
+    height: 230px;
+    background: url("../images/cat1.png") content-box,url("../images/dog2.png") border-box;
+    background-size: 200px 230px ,260px 290px;
+    background-repeat: no-repeat;
+    text-align: center;
+    line-height: 200px;
+    border: #000 dotted 20px;
+    padding: 10px;
+}
+.bg-click{
+    width: 350px;
+    height: 200px;
+    background-clip: content-box;/*背景色的定位*/
+    background-color: #000000;
+    color: #fff;
+    border:10px pink solid;
+    padding: 20px;
+}
