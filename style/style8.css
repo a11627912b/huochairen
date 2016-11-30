@@ -1,0 +1,191 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    width: 150px;
+    height: 100px;
+    margin: 0 10px;
+}
+.logo-text{
+    text-decoration: none;
+    color: black;
+}
+#p0{
+    width: 150px;
+    height: 40px;
+    margin: -10px 35px;
+    font-size: 20px; ;
+}
+.web{
+    width: 1300px;
+    margin:0 auto;
+}
+.daohang{
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+}
+#first{
+    margin: 0 0;
+    float: left;
+}
+.text1{
+    width: 270px;
+    height: 30px;
+    float: left;
+    margin: 2px 0;
+}
+.find{
+    height: 36px;
+    margin: 2.4px -1px;
+}
+.remen{
+    width: 1300px;
+    height: 500px;
+}
+.r-left{
+    width: 300px;
+    height: 500px;
+    float: left;
+}
+.r-l-top{
+    border-bottom: black solid 8px;
+    border-left: black solid 8px;
+    font-size: 30px;
+    width: 300px;
+    margin: 50px 30px;
+}
+#p1{
+    margin: 10px 0;
+}
+.r-l-bottom{
+    width: 300px;
+    margin: 50px 30px;
+}
+#ul1{
+    font-size: 30px;
+}
+#dog{
+    width: 500px;
+}
+.r-center{
+    width: 500px;
+    float: left;
+    margin: 50px 50px ;
+}
+.r-right{
+    width:450px;
+    margin: 50px 50px;
+    float: left;
+    margin: 50px -30px;
+}
+.r-r-top{
+    border-bottom: black solid 8px;
+    border-left: black solid 8px;
+    font-size: 30px;
+    width: 420px;
+    height: 40px;
+}
+#p2{
+    margin: 10px 0;
+    width: 400px;
+    height: 40px;
+}
+#ul2{
+    font-size: 29px;
+}
+#ul3{
+    font-size: 30px;
+}
+.photo{
+    width: 250px;
+    height: 150px;
+    border: black solid 2px;
+    margin: 0 100px;
+}
+.k-center{
+    width: 1300px;
+    height: 750px;
+}
+.k-center p{
+    width: 250px;
+    font-size: 25px;
+    text-align: center;
+    margin: 0 100px;
+}
+.k-c-a{
+    width: 400px;
+    height: 250px;
+    float: left;
+}
+.bottom{
+    width: 1300px;
+    height: 400px;
+    background-color: black;
+    font-size: 20px;
+}
+.b-box{
+    width: 430px;
+    height: 400px;
+    float: left;
+}
+.lianjie{
+    color: coral;
+    margin: 20px 20px;
+}
+.bottom li{
+    color: white;
+}
+#ul4{
+    margin: auto 70px;
+    list-style: none;
+}
+.bottom a{
+    color: white;
+    text-decoration: none;
+}
+.bottom label{
+    color: white;
+}
+.bottom input{
+    background-color: #777777;
+    border: 2px coral solid ;
+}
+#tijiao{
+    background-color: white;
+    border: none;
+    width: 60px;
+    height: 30px;
+    margin: auto 200px;
+}
+#denglu{
+     background-color: white;
+     border: none;
+    width: 60px;
+    height: 30px;
+    margin: auto 200px;
+ }
+.zhuce{
+    width: 300px;
+    text-align: center;
+    color: white;
+}
+.denglu{
+    width: 300px;
+    text-align: center;
+    color: white;
+}
+.label{
+    text-align: right;
+    width: 300px;
+    height: 21px;
+}
+.form1{
+    margin: 10px 0px;
+}
+.form2{
+    margin: 10px 0px;
+}

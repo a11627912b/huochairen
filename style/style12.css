@@ -1,0 +1,64 @@
+body{
+    counter-reset: section;
+}
+p:first-line{
+    color: #8C2106;
+}
+p:first-letter{
+    font-size: 50px;
+}
+.charu:before{
+    content: url("../images/dog.png");
+}
+.charu:after{
+    content: url("../images/dog.png");
+}
+.charu:before{
+    content: 'ashjkfhasjkhfkjahsjkf';
+    color: red;
+}
+.data-use:before{
+    content: "("attr(data-aabbc)")";
+}
+h1{
+    counter-reset: subsection;
+}
+h1:before{
+    counter-increment: section;
+    content: "Section" counter(section)".";
+}
+h2:before{
+    counter-increment: subsection;
+    content: counter(section)"."counter(subsection)".";
+}
+h3:before{
+    counter-increment: subsection;
+    content: counter(section)"."counter(subsection)"."counter(subsection)".";
+}
+.big-d{
+    width: 1000px;
+    height: auto;
+}
+.big-d:after{
+    content: ' ';
+    clear: both;
+    display: block;
+}
+.d1{
+    float: left;
+    width: 100px;
+    height: 50px;
+    background-color: #8C2106;
+}
+.by-child>li:nth-child(1){
+    background-color: red;
+}
+.odd-even>li:nth-child(even){
+    background-color: white;
+}
+.odd-even>li:nth-child(odd){
+    background-color: black;
+}
+.count-num>li:nth-child(3n+1){
+    background-color: blue;
+}

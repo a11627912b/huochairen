@@ -1,0 +1,526 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.head{
+    width: 100%;
+    height: 125px;
+    position: relative;
+    top:0;
+    left: 0;
+}
+.logo{
+    width: 1000px;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:50%;
+    margin-left: -500px;
+    margin-top: 5px;
+}
+.head .logo-1{
+    width: 173px;
+    height: 90px;
+}
+.logo-a{
+    display: block;
+    width: 173px;
+    height: 90px;
+    text-decoration: none;
+}
+.web-title{
+     width: 173px;
+     height: auto;
+     margin-top: 6px;
+     color: black;
+     text-align: center;
+     letter-spacing: 15px;
+ }
+.navigator{
+    background-color: #8C2106;
+    width: 100%;
+    height: 35px;
+}
+.navigator .inner a{
+    color: #ffffff;
+    text-decoration: none;
+
+}
+.inner{
+    width: 1000px;
+    height: 100%;
+    line-height: 35px;
+    margin: 0 auto;
+}
+.inner a{
+    display: block;
+    float: left;
+}
+.search-container{
+    width: 280px;
+    height: 25px;
+    background-color: #E13409;
+    float: left;
+    margin-top:6px;
+    margin-left: 16px;
+    border: 1px solid #6F1A04;
+    border-radius: 5px;
+    line-height: 1px;
+}
+.search-input{
+    height: 100%;
+    background-color: rgba(0,0,0,0);
+    border:none;
+    outline: none;
+    width: 255px;
+    padding-left: 5px;
+    color: #ffffff;
+}
+.search-container > *{
+    display: block;
+    float: left;
+}
+.search-container > img{
+    margin-top: 1px;
+}
+.picture-list{
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+.picture-list h1{
+    font-size: 36px;
+    margin: 50px 33px 30px;
+}
+.cat{
+    width: 232px;
+    height: auto;
+    float: left;
+    margin-left: 16px;
+    border: none;
+    position: relative;
+}
+.picture-list .cat:first-child{
+    margin-left: 11px;
+}
+.picture{
+    margin-top: 29px;
+}
+.jiantoul{
+    width: 31px;
+    height: 41px;
+    background-image: url("../images/左箭头雪碧图.png");
+    background-position: -43px 0;
+    position: absolute;
+    top:100px;
+    left: 0;
+}
+.jiantoul:hover{
+    background-position: -76px 0;
+}
+.jiantour{
+    width: 31px;
+    height: 41px;
+    background-image: url("../images/右箭头雪碧图.png");
+    background-position: -46px 0;
+    position: absolute;
+    top:100px;
+    left: 200px;
+}
+.jiantour:hover{
+    background-position: -3px 0;
+}
+#jiantoul:hover{
+
+}
+.introduce-box{
+    width: 1000px;
+    height: auto;
+    margin:  auto;
+}
+.introduce{
+    width: 500px;
+    height: auto;
+    float: left;
+}
+.box-label{
+    width: 500px;
+    height: 280px;
+    float: left;
+    position: relative;
+}
+.introduce h2{
+    margin-top: 52px;
+}
+.box-label h2{
+    margin-top: 52px;
+}
+.box-label div{
+    border-radius: 5px;
+    line-height: 1px;
+    text-align: center;
+}
+.box-label div:hover{
+    background-color: gray;
+}
+.box-label div p{
+    color: white;
+    line-height: 1;
+}
+.box1{
+    background-color: #006633;
+    width: 156px;
+    height: 40px;
+    position: absolute;
+    top:104px;
+    left: 22px;
+}
+.box2{
+    background-color: #0099FF;
+    width: 184px;
+    height: 40px;
+    position: absolute;
+    top: 16px;
+    left: 87px;
+}
+.box3{
+    background-color: #993300;
+    width: 140px;
+    height: 40px;
+    position: absolute;
+    top: 196px;
+    left: 77px;
+}
+.box4{
+    background-color: #003399;
+    width: 200px;
+    height: 42px;
+    position: absolute;
+    top: 129px;
+    left: 199px;
+}
+.box5{
+    background-color: #993300;
+    width: 220px;
+    height: 48px;
+    position: absolute;
+    top: 232px;
+    left: 236px;
+}
+.box6{
+    background-color: #CC9900;
+    width: 215px;
+    height: 43px;
+    position: absolute;
+    top: 65px;
+    left: 302px;
+}
+.box7{
+    background-color: #990099;
+    width: 119px;
+    height: 44px;
+    position: absolute;
+    top: 162px;
+    left: 399px;
+}
+.gonglue{
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+.relative{
+    width: 1000px;
+    height: auto;
+    margin: 0 auto 0 auto ;
+    position: relative;
+}
+.re-box{
+    border: black solid;
+    border-radius: 20px ;
+    margin: 10px 10px auto 10px;
+}
+.relative .box{
+    width: 727px;
+}
+.re-b-1{
+    margin-left: 100px;
+}
+.relative .ad{
+    width: 174px;
+    position: absolute;
+    top: 0;
+    left: 820px;
+}
+#add{
+    visibility: hidden;
+}
+.add{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 1;
+    visibility: hidden;
+}
+.add-text{
+    width: 670px;
+    height: 430px;
+    background-color: white;
+    margin: 250px auto;
+    position: relative;
+    border-radius: 10px ;
+}
+.add-text p{
+    position: absolute;
+    left: 10px;
+    top: -5px;
+    font-size: 20px;
+}
+#add-re{
+    color: blue;
+}
+.add-text-all p{
+    margin-left: 30px;
+    margin-top: 50px;
+    font-size: 20px;
+}
+.add-text-label{
+    position: absolute;
+    top: 70px;
+    left: 10px;
+}
+.add-text-all{
+    margin-left: 30px;
+}
+.add-text-all input{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.add-text-label input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    border: 1px solid #666666;
+    background-color: #666;
+    -webkit-appearance: none;
+}
+.add-text-label input:checked{
+    content: url("../images/checked.png");
+}
+#add-text{
+    border-radius: 10px;
+    height: 230px;
+    width: 600px;
+    display: block;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+#add:checked+.add{
+    visibility: visible;
+}
+#true{
+    position: absolute;
+    top: 400px;
+    left: 580px;
+}
+#off{
+    position: absolute;
+    top: 400px;
+    left: 500px;
+}
+#off-l{
+    position: absolute;
+    top: 401px;
+    left: 584px;
+    z-index: 1;
+}
+#true-l{
+    position: absolute;
+    top: 401px;
+    left: 504px;
+    z-index: 1;
+}
+.evolution{
+    width: 1000px;
+    height: 160px;
+    margin: 0 auto;
+}
+.ev-picture{
+    width: 1000px;
+    height: auto;
+    position: relative;
+}
+.ev-pic-l{
+    width: 31px;
+    height: 41px;
+    background-image: url("../images/左箭头雪碧图.png");
+    background-position: -43px 0;
+    position: absolute;
+    top:40px;
+    left: 10px;
+}
+.ev-pic-r{
+    width: 31px;
+    height: 41px;
+    background-image: url("../images/右箭头雪碧图.png");
+    background-position: -46px 0;
+    position: absolute;
+    top:40px;
+    left: 955px;
+}
+.ev-pic-l:hover{
+    background-position: -77px 0;
+}
+.ev-pic-r:hover{
+    background-position: -3px 0;
+}
+.ev-dog{
+    margin-left: 198px;
+}
+.ev-jiantou{
+    margin: 41px 0 41px 115px;
+}
+.ev-cat{
+    margin-left: 127px;
+}
+.ev-textleft{
+    position: relative;
+    top: 0;
+    left: 230px;
+}
+.ev-textright{
+    position: relative;
+    top: -34px;
+    left: 690px;
+}
+.pager{
+    width: 928px;
+    height: auto;
+    margin: 21px auto;
+}
+.pager input{
+    height: 32px;
+    border-radius:5px;
+}
+.pager input:focus{
+    outline: none;
+}
+.pager span{
+    font-size: 50px;
+    letter-spacing: -16px;
+    color: #999999;
+}
+.footer{
+    width: 100%;
+    height: 250px;
+    background-color: #2D2D2D;
+    margin-top: 34px;
+}
+.footer>.content{
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+.footer .content >div{
+    float: left;
+}
+.footer .links{
+    width: 234px;
+    height: auto;
+}
+.friendship{
+    width: 74px;
+    height: auto;
+    color: #AD6503;
+    font-size: 14px;
+    margin-top: 24px;
+}
+.footer .links div{
+    float: left;
+}
+.links ul{
+    float: left;
+    list-style:none;
+    margin: 39px -48px;
+    height: 170px;
+}
+.links a{
+    color: #B4B4B4;
+    text-decoration: none;
+    font-size: 14px;
+}
+.links li{
+    margin-bottom: 9px;
+
+}
+.links li:last-child{
+    margin-top: 30px;
+}
+.register{
+    width: 255px;
+    height: auto;
+    color: #B2B2B2;
+    font-size: 14px;
+    margin-left: 123px;
+}
+.register p{
+    text-align: center;
+}
+.label-container{
+    float: left;
+    width: 77px;
+    text-align: right;
+}
+.register input[type=text]
+,.register input[type=password]
+,.register input[type=number]{
+    width: 178px;
+    height: 27px;
+    border-radius: 4px;
+    background-color: #646464;
+    border-color:#FDAF46 ;
+}
+.register .row{
+    margin-bottom: 12px;
+    text-align: right;
+}
+.register input[type=submit]{
+    width: 54px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #B2B2B2;
+    border: none;
+}
+.login{
+    width: 255px;
+    margin-left: 73px;
+    height: auto;
+    color: #B2B2B2;
+    font-size: 14px;
+}
+.login .row{
+    margin-bottom: 12px;
+    text-align: right;
+}
+.login p{
+    text-align: center;
+}
+.login input[type=text]
+,.login input[type=password]{
+    width: 178px;
+    height: 27px;
+    border-radius: 4px;
+    background-color: #646464;
+    border-color: #FDAF46;
+}
+.login input[type=submit]{
+    width: 54px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #B2B2B2;
+    border: none;
+}
