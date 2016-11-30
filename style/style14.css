@@ -15,7 +15,7 @@ header{
     background-color: white;
 }
 .header{
-    width: 1000px;
+    width: 1500px;
     height: 80px;
     margin: 0 auto;
 }
@@ -34,6 +34,28 @@ header{
     font-size: 25px;
     display: block;
     float: left;
-    margin-top: 20px;
+    margin-top: 23px;
     margin-left: 10px;
+}
+.header-search{
+    width: 420px;
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    float: left;
+}
+.header-search-out{
+    width: 470px;
+    height: 42px;
+    float: left;
+    margin-left: 60px;
+    margin-top: 17px;
+    border: 1px black solid;
+}
+.header-search-out img{
+    display: block;
+    float: left;
+    margin-left: 15px;
+    margin-top: 10px;
 }
