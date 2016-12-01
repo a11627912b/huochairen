@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.flex-container{
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;/*弹性子元素排列方式*/
+    justify-content: center;/*内容水平对齐属性*/
+    align-items: center;/*内容垂直对齐属性*/
+}
+.flex-item{
+    background-color: #35FAFF;
+    width: 200px;
+    height: 50px;
+}

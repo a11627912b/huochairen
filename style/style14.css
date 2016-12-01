@@ -6,8 +6,9 @@ body{
 }
 #all{
     width: 100%;
-    height: auto;
+    height: 3000px;
     background-color: lightgray;
+    border-bottom: solid 1px #D2D2D2;
 }
 header{
     width: 100%;
@@ -15,7 +16,7 @@ header{
     background-color: white;
 }
 .header{
-    width: 1500px;
+    width: 1600px;
     height: 80px;
     margin: 0 auto;
 }
@@ -36,6 +37,7 @@ header{
     float: left;
     margin-top: 23px;
     margin-left: 10px;
+    border: 1px lightgray solid;
 }
 .header-search{
     width: 420px;
@@ -47,15 +49,225 @@ header{
 }
 .header-search-out{
     width: 470px;
-    height: 42px;
+    height: 43px;
     float: left;
     margin-left: 60px;
     margin-top: 17px;
-    border: 1px black solid;
+    border: 1px lightgray solid;
 }
 .header-search-out img{
     display: block;
     float: left;
     margin-left: 15px;
     margin-top: 10px;
+}
+.add{
+    width: 45px;
+    height: 45px;
+    background-color: #E9E9E9;
+    margin-left: 50px;
+    margin-top: 15px;
+    float: left;
+    color: white;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 50px;
+}
+.header-right{
+    float: left;
+    width: 700px;
+    height: 80px;
+    margin-left: 40px;
+}
+.head-text{
+    width: 150px;
+    height: 45px;
+    float: left;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 45px;
+    text-align: center;
+    border-left: solid 1px lightgray;
+}
+.head-text:last-child{
+    text-align: right;
+    width: 180px;
+}
+.head-text img{
+    display: block;
+    margin-left: 20px;
+}
+.head-text label{
+    position: relative;
+    top: -40px;
+    left: -30px;
+}
+.head-text select{
+    display: block;
+    position: relative;
+    top: -26px;
+    left: 150px;
+    float: left;
+}
+.head-text:first-child{
+    width: 190px;
+}
+.head-text span{
+    position: relative;
+    left: 15px;
+    float: left;
+}
+#new{
+    width: 40px;
+    height: 25px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    line-height: 20px;
+    float: left;
+    background-color:  #ff447e;
+    left: 20px;
+    top: 10px;
+    display: block;
+    color: white;
+}
+.body{
+    width: 1600px;
+    height: 100%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.top-left{
+    width: 891px;
+    height: 555px;
+    clear: both;
+    float: left;
+}
+.top-right-top{
+    width: 600px;
+    height: 350px;
+    background-color: white;
+    float: left;
+    margin-left: 30px;
+ }
+.t-r-top{
+    width: 570px;
+    height: 335px;
+    background-color: white;
+    margin-left: 30px;
+    margin-top: -10px;
+}
+.t-r-top h3{
+    color: silver;
+}
+.t-r-text{
+    width: 540px;
+    height: 63px;
+    border-top: 1px dashed silver;
+    line-height: 63px;
+    color: gray;
+}
+.t-r-text-first{
+    width: 540px;
+    height: 106px;
+    border-top: 1px dashed  silver;
+    line-height: 106px;
+    padding-top: 30px;
+}
+.t-r-text-first div{
+    float: left;
+    height: 17px;
+    border-right: 1px solid silver;
+    line-height: 17px;
+    color: gray;
+}
+.t-r-text-first-1{
+    width: 66px;
+    text-align: center;
+}
+.t-r-text-first-2{
+    width: 180px;
+    text-align: center;
+}
+.t-r-text-first-3{
+    width: 82px;
+    text-align: center;
+}
+.t-r-text-first-4{
+    width: 181px;
+    text-align: center;
+}
+.t-r-text-first-5{
+    width: 66px;
+    text-align: center;
+    clear: both;
+    margin-top: 15px;
+}
+.t-r-text-first-6{
+    width: 82px;
+    text-align: center;
+    margin-top: 15px;
+}
+.t-r-text-first-7{
+    width: 83px;
+    text-align: center;
+    margin-top: 15px;
+}
+.play{
+    width: 39px;
+    height: 26px;
+    background-color: #ffd230;
+    color: white;
+    line-height: 26px;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: -45px;
+}
+.choose{
+    width: 39px;
+    height: 26px;
+    background-color: #ff447e;
+    color: white;
+    line-height: 26px;
+    text-align: center;
+    margin-left: 200px;
+    margin-top: -45px;
+}
+.t-r-bottom{
+    width: 600px;
+    height: 163px;
+    background-color: white;
+    margin-top: 48px;
+}
+#pic1{
+    width: 1530px;
+    height: 550px;
+    border-top: 1px solid #8a91a7;
+    float: left;
+    margin-top: 52px;
+}
+#pic1 h2{
+    margin-top: 47px;
+    color: gray;
+}
+.photo{
+    width: 279px;
+    height: 404px;
+    background-color: white;
+    margin-left: 20px;
+    margin-top: 30px;
+    float: left;
+}
+#pic2{
+    width: 1530px;
+    height: 550px;
+    border-top: 1px solid #8a91a7;
+    float: left;
+    margin-top: 52px;
+}
+#pic2 h2{
+    margin-top: 47px;
+    color: gray;
 }
