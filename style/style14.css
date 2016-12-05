@@ -271,3 +271,8 @@ header{
     margin-top: 47px;
     color: gray;
 }
+.pic-text{
+    width: 260px;
+    margin: 10px 10px;
+    font-size: 17px;
+}
