@@ -1,0 +1,132 @@
+@font-face {
+    font-family: "glyphicons";
+    src:url(../fonts/glyphicons-halflings-regular.ttf);
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "glyphicons", serif;
+}
+.bg{
+    width: 100vw;
+    height: 100vh;
+}
+#l1{
+    background-color: #B61705;
+}
+#l1:before{
+    content: "\2709";
+    font-size: 30px;
+}
+#l2{
+    background-color: #0086A8;
+}
+#l2:before{
+    content: "\e114";
+    font-size: 30px;
+}
+#l3{
+    background-color: #6B00BB;
+}
+#l3:before{
+    content: "\1205";
+    font-size: 30px;
+}
+#l4{
+    background-color: #BB006B;
+}
+#l4:before{
+    content: "\e125";
+    font-size: 30px;
+}
+#l5{
+    background-color: #A66800;
+}
+#l5:before{
+    content: "\2580";
+    font-size: 30px;
+}
+#l6{
+    background-color: #779902;
+}
+#l6:before{
+    content: "\e165";
+    font-size: 30px;
+}
+#l7{
+    background-color: #0113BA;
+}
+#l7:before{
+    content: "\e112";
+    font-size: 30px;
+}
+#l8{
+    background-color: #009747;
+}
+#l8:before{
+    content: "\e129";
+    font-size: 30px;
+}
+#l9{
+    background-color: #417A62;
+}
+#l9:before{
+    content: "\e233";
+    font-size: 30px;
+}
+#l10{
+    background-color: #E800BF;
+}
+#l10:before{
+    content: "\e158";
+    font-size: 30px;
+}
+#l11{
+    background-color: #01BA95;
+}
+#l11:before{
+    content: "\e101";
+    font-size: 30px;
+}
+#l12{
+    background-color: #1B5AC5;
+}
+#l12:before{
+    content: "\e123";
+    font-size: 30px;
+}
+#l13{
+    background-color: #00A69D;
+}
+#l13:before{
+    content: "\e124";
+    font-size: 30px;
+}
+#l14{
+    background-color: #279B00;
+}
+#l14:before{
+    content: "\e117";
+    font-size: 30px;
+}
+#l15{
+    background-color: #3C6A6F;
+}
+#l15:before{
+    content: "\e118";
+    font-size: 30px;
+}
+#l16{
+    background-color: #333333;
+}
+#l16:before{
+    content: "\e150";
+    font-size: 30px;
+}
+.list>div:hover{
+    border: 1px white solid;
+    cursor: pointer;
+}

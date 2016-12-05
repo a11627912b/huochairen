@@ -14,13 +14,9 @@ a{
 .container{
     width: 100vw;
     height: 60vh;
-    background-color: #000;
     float: left;/*overflow:hidden*/
 }
 @media all and (min-width:1001px){
-    .container{
-        background-color: deepskyblue;
-    }
     .container li:before{
         content: "\2709";
         color: blue;
@@ -29,15 +25,7 @@ a{
         content: attr(data-email);
     }
 }
-@media screen and (min-width: 800px) and (max-width: 1001px){
-    .container{
-        background-color: navy;
-    }
-}
 @media screen and (min-width: 400px) and (max-width: 800px){
-    .container{
-        background-color: darkcyan;
-    }
     .container li:before{
         content: "\2709";
         color: blue;

@@ -1,0 +1,31 @@
+.list{
+    width: 100vw;
+    height: 700px;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: white;
+}
+.list div{
+    width: 33%;
+    height: 16%;
+    color: white;
+    font-weight: 900;
+    font-size: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.top img{
+    width: 100%;
+}
+.bottom{
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+.bottom:before{
+    content: "2016/12/2：在上级领导的关系和支持下，web前端班组织了生动有趣的集体游戏。";
+}
