@@ -7,8 +7,8 @@
     display: flex;
 }
 .list{
-    width: 60%;
-    height: 60%;
+    width: 0;
+    height: 0;
     background-color: rgba(0,0,0,0.7);
     display: flex;
     flex-wrap: wrap;
@@ -17,20 +17,29 @@
     padding-bottom: 20px;
     padding-left: 30px;
     padding-right: 50px;
+    visibility: hidden;
+    overflow: hidden;
+    transition:0.5s;
 }
 .bottom{
     width: 100vw;
     height: 50px;
     background-color: rgba(0,0,0,0.7);
-
 }
-.bottom:before{
+.bottom label{
     content: "vskr";
     color: white;
-    font-size: 40px;
+    font-size: 2vw;
     font-weight: 900;
     position: relative;
-    top: -15px;
+}
+#checked{
+    visibility: hidden;
+}
+#checked:checked+.list{
+    visibility: visible;
+    width: 60%;
+    height: 60%;
 }
 .list div{
     width: 24%;
@@ -42,7 +51,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    transition: transform 1s;
 }
 .top{
+    display: none;
+}
+.bottom-mo{
     display: none;
 }

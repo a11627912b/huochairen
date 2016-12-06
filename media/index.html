@@ -5,16 +5,17 @@
     <meta name="viewport" content="width-device-width,initial-scale=1.0">
     <title>媒体查询</title>
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/mobile.css" media="screen and (min-width:0)">
+    <link rel="stylesheet" href="style/mobile.css" media="screen and (min-width:0) and (max-width:800px)">
     <link rel="stylesheet" href="style/pc.css" media="screen and (min-width:800px)">
 </head>
 <body>
     <div class="bg">
         <div class="top">
-            <div></div>
-            <img src="images/header.png">
-            <img src="images/top.png">
+            <img src="images/header.png" class="top-h">
+            <div class="search"><img src="images/search.png"><input type="text" title="搜索感兴趣的内容" placeholder="搜索感兴趣的内容"></div>
+            <img src="images/top.png" class="top-bg">
         </div>
+        <input id="checked" type="checkbox">
         <div class="list">
             <div id="l1">学员日常</div>
             <div id="l2">课堂表现</div>
@@ -33,7 +34,9 @@
             <div id="l15">分组</div>
             <div id="l16">集体活动</div>
         </div>
+        <div class="bottom-mo"></div>
         <div class="bottom">
+            <label for="checked">VSKR</label>
         </div>
     </div>
 </body>
