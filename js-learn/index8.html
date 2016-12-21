@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    (function im() {
+        document.write("immediately invoke function!");
+    })();
+    (function im() {
+        document.write("immediately invoke function!");
+    }());
+
+
+
+
+
+    var firstMsg="global";/*默认调用，this就是Window对象*/
+    function output() {
+        document.write(this.firstMsg);
+    }
+    output();
+
+
+
+
+    var computer={/*引式指定this的调用，*/
+        message:"coming message",
+        output:function () {
+            document.write(this.message);
+            document.write("<br>");
+        },
+        input:function (msg) {
+            this.message=msg;
+        }
+    };
+    computer.input("Invoke function by object!");
+    computer.output();
+
+
+
+
+    function Animal(lifeSpan){
+        this.lifeSpan=lifeSpan?lifeSpan:100;
+        this.birth="1970-1-1";
+        this.name="animal";
+    }
+    function Black() {
+        this.target=["cute","noisy"];
+        this.nickName="nini";
+    }
+    var littleBlack=new Black();
+    Animal.apply(littleBlack[30]);
+    var data=JSON.stringify(littleBlack);
+    document.write(data);
+    var littleBlack2=Animal.call(littleBlack,30);
+    var littleBlackFn= Animal.bind(littleBlack,[30]);
+    var littleBlack3=littleBlackFn();
+    var data = JSON.stringify(littleBlack);
+    document.write(data);
+
+
+
+
+</script>
+</body>
+</html>

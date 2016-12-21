@@ -7,5 +7,60 @@
 <body>
 <!-- html注释练习 -->
     <script src="scripts/script.js">/*插入脚本,放在body内，且放在最后*/</script>
+<h1>内置对象（函数）</h1>
+String Number Array
+<script>
+    document.write();
+    var strData=new String("data");
+    console.log(strData);
+    var strData2="data2";
+    console.log(strData2);
+    var numStr = String(123);
+    console.log(numStr);
+
+    document.write("<h1>数字</h1>");
+    var numberData=new Number(123);
+    var convertNumber=Number("123");
+    var convertNot=Number("abc");
+    document.write(convertNot);
+    var flag = NaN ==convertNot;
+    document.write("<br>");
+    document.write("NaN ==convertNot ="+flag);/*NaN不等于自身，NaN不等于任何东西*/
+
+    document.write("<br>");
+    var plnt=parseInt('213');
+    document.write("parseInt('123')--->"+plnt);
+
+    document.write("<h1>数组</h1>");
+    var array1=new Array();
+    array1.push("123");
+    array1.push(123);
+    array1.push(true);
+    array1.push(undefined);
+    array1.push(null);
+    array1.push({title:"I'm a object."});
+    document.write("<h2>数组遍历</h2>");
+    for(var i =0;i< array1.length;i++){/*输出数组的每一个元素*/
+        document.write(array1[i]);
+    }
+    document.write("<br>");
+    document.write("<h3>数组遍历while</h3>");
+    var i1=0;
+    while (i1<array1.length){
+        document.write(array1[i1]);
+        i1++;
+    }
+    document.write("<br>");
+    var resultJoin=array1.join("$");
+    document.write(resultJoin);
+    document.write("<br>");
+    var resultSplit =resultJoin.split("$");
+    var iDoWhile=0;
+    do{
+        document.writeln(resultSplit[iDoWhile]);
+        iDoWhile++;
+    }
+    while (iDoWhile<resultSplit.length)
+</script>
 </body>
 </html>

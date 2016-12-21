@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>手风琴2</title>
+    <style>
+        .container{
+            width: 800px;
+            height: 500px;
+        }
+        [data-flag]{
+            width: 100%;
+            height: 35px;
+            background-color: #1B5AC5;
+            color: #fff;
+            cursor: pointer;
+            line-height: 35px;
+            padding-left: 10px;
+            margin-top: 3px;
+        }
+        [data-flag]+div{
+            width: 100%;
+            height: 0;
+            transition: height 0.5s;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="item1" data-flag="select">
+        title1
+    </div>
+    <div class="item1-content" data-content>
+        content1
+    </div>
+    <div class="item2" data-flag="select">
+        title2
+    </div>
+    <div class="item2-content" data-content>
+        content2
+    </div>
+    <div class="item3" data-flag="select">
+        title3
+    </div>
+    <div class="item3-content" data-content>
+        content3
+    </div>
+    <div class="item4" data-flag="select">
+        title4
+    </div>
+    <div class="item4-content" data-content>
+        content4
+    </div>
+</div>
+<script>
+    var titles=document.querySelectorAll("[data-flag=select]");
+//    var titles=document.getElementsByClassName("title");
+    for(var i=0;i<titles.length;i++){
+        titles[i].addEventListener("click",
+                function (e) {
+//            var content=document.getElementsByClassName("content");
+//            for(var j=0;j<content.length;j++){
+//                content[j].style.height=0;
+//            }
+                    var contents=document.querySelectorAll("[data-content]");
+                    contents.forEach(function (element) {
+                       element.style.height=0;
+                    });
+            var current=e.currentTarget;
+                    var item=current.getAttribute("class");
+                    var content=item+"-content";
+                    var contentItem=document.getElementsByClassName(content)[0];
+                    contentItem.style.height="300px";
+//            var content =  current.nextElementSibling;
+//            content.style.height="300px";
+        });
+    }
+</script>
+</body>
+</html>

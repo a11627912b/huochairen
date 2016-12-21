@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Draggle</title>
+</head>
+<body>
+<div id="dragContainer"
+     style="width:200px;height:200px;background-color:red;position:absolute;">
+</div>
+<script>
+    var touchPoint = {};
+    var isTouchDown = false;
+    var dragContainer = document.getElementById("dragContainer");
+    dragContainer.addEventListener("touchstart",function(e){
+        e.preventDefault();
+        if(e.targetTouches &&e.targetTouches.length===1){
+            e=e.targetTouches[0];
+        }
+        isTouchDown = true;
+        touchPoint.x = e.pageX;
+        touchPoint.y = e.pageY;
+    });
+    document.addEventListener("touchend"
+            ,function(e){
+                isTouchDown = false;
+            });
+    document.addEventListener("touchmove",function(e){
+        e.preventDefault();
+        if(e.targetTouches &&e.targetTouches.length===1){
+            e=e.targetTouches[0];
+        }
+        var touchX = e.pageX;
+        var touchY = e.pageY;
+        if(isTouchDown){
+            var subX = touchX - touchPoint.x;
+            var subY = touchY - touchPoint.y;
+            dragContainer.style.left =
+                    (dragContainer.offsetLeft + subX)+"px";
+            dragContainer.style.top =
+                    (dragContainer.offsetTop + subY)+"px";
+        }
+        touchPoint.x = touchX;
+        touchPoint.y = touchY;
+    });
+</script>
+</body>
+</html>

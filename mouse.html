@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鼠标事件</title>
+    <style>
+        #container{
+            width: 400px;
+            height: 300px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+
+</div>
+<script>
+    function listen(selector,event,fn) {
+        var ele = document.querySelector("#container");
+        ele.addEventListener(event,fn);
+    }
+    listen("#container","mouseenter",function (e) {
+//        alert( e.offsetX);
+//        alert( e.offsetY);
+    });
+    listen("#container","mouseleave",function () {
+//        alert("mouseLeave");
+    });
+    listen("#container","dblclick",function () {
+//        alert("mousedblclick");
+    });
+    listen("#container","mouseover",function () {
+//        alert("over");
+    });
+    listen("#container","mouseout",function () {
+//        alert("out");
+    });
+    listen("#container","mousedown",function (e) {
+        e.currentTarget.style.backgroundColor="black";
+    });
+    listen("#container","mouseup",function (e) {
+        e.currentTarget.style.backgroundColor="yellow";
+    });
+    listen("#container","mousemove",function (e) {
+        document.getElementById("container")
+            .innerText=e.pageX+","+e.pageY;
+    });
+
+</script>
+</body>
+</html>

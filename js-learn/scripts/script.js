@@ -121,3 +121,5 @@ document.write(person.name);
 document.write(person.age);
 document.write("<br>");
 
+
+/*JavaScript数组*/

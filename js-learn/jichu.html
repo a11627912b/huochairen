@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基础</title>
+</head>
+<body>
+<script>
+    var forEachArray=[100,200,300,400,500];
+    forEachArray.forEach(function (x) {
+        document.writeln(x);
+    });
+    document.write("<br>");
+
+
+
+    var mapArray=[100,200,300,400,500];
+    mapArray.map(function (x) {
+       document.writeln(x);
+    });
+    document.write("<br>");
+
+
+
+    var pushArray=["a","b","c","d","e"];
+    document.write(pushArray);
+    pushArray.push(1);
+    document.write("<br>push后：");
+    document.write(pushArray);
+    document.write("<br>");
+
+
+
+    var aSlice=[1,2,3,4,5,6,7,8,9,10];
+    var sliceResult=aSlice.slice(0,3);
+    document.write(sliceResult);
+    document.write("<br>");
+    for(var o=0;o<aSlice.length;o++){
+        var item=aSlice.slice(aSlice.length-(o+1),aSlice.length-(o));
+        document.writeln(item[0]);
+    }
+    document.write("<br>");
+
+
+
+
+    var aConcat=["h","e","l","l","o"];
+    var aConcat2=["w","o","r","l","d"];
+    var aConcat1=[".........."];
+    var aConcat3=aConcat.concat(aConcat2,aConcat1);
+    document.write(aConcat3);
+    document.write("<br>");
+
+
+
+    var sourse="SadlkDsdlfDsdlkfDdslf";
+    var re=sourse.toLowerCase();
+    document.write(sourse);
+    document.write("<br>");
+    document.write(re);
+    document.write("<br>");
+
+
+
+    var words=["asdas","ddfgdfgfd","edfgdfg","bfdgdfg","adfgdf"];
+    words.sort();
+    document.write(words);
+
+
+
+
+    var str="123";
+//    alert(typeof (str-0));
+
+
+
+
+    document.write("<br>");
+    var a=1;
+    var b="2";
+    var c=3;
+    var output1=a+b+c;
+    var output2=a+c+b;
+    document.write(output1);
+    document.write("<br>");
+    document.write(output2);
+    document.write("<br>");
+
+    var aJoin=["h","e","l","l","o"];
+    var result=aJoin.join("|");
+    document.write(result);
+    document.write("<br>");
+    var aSplit=result.split("|");
+    document.write(aSplit);
+    document.write("<br>");
+    aSplit.reverse();
+    document.write(aSplit);
+
+    var al=
+            [1,2,3,4,5,6,7,8,9,10];
+    for(var i=0;i<al.length/2;i++){
+        var temp1=al[i];
+        var temp2=al.length-(i+1);
+            al.splice(i,1,al[temp2]);
+            al.splice(temp2,1,temp1);
+    }
+    console.log(al);
+</script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单操作</title>
+</head>
+<body>
+    <form>
+        <label>姓名：巫兆竣</label>
+        <label>爱好：</label>
+        <label>女</label><input type="checkbox" name="choose" title="请单机选择">
+        <label>游戏</label><input type="checkbox" name="choose" title="请单机选择">
+        <label>打豆豆</label><input type="checkbox" name="choose" title="请单机选择"><br/>
+        <label>全选</label><input type="checkbox" name="allChecked" id="allChecked" title="请单机选择">
+        <label>反选</label><input type="checkbox" name="reverseChecked" id="reverseChecked" title="请单机选择">
+        <label>全不选</label><input type="checkbox" name="noChecked" id="noChecked" title="请单机选择"><br/>
+    </form>
+</body>
+<script>
+    var singleTrue=false;
+    var allTrue=true;
+    var allChecked=document.getElementById("allChecked");
+    allChecked.addEventListener("click",function () {
+        var checkBoxes=document.getElementsByName("choose");
+        for(var i=0;i<checkBoxes.length;i++){
+            var e=checkBoxes[i];
+            if (e.checked){
+                singleTrue=true
+            }
+            if (!e.checked){
+                allTrue=false;
+            }
+        }
+        for(var j=0;j<checkBoxes.length;j++){
+            var d=checkBoxes[j];
+            if (singleTrue){
+                d.checked=true;
+            }
+            if (allTrue){
+                d.checked=false;
+            }
+        }
+        for(var k=0;k<checkBoxes.length;k++){
+            var c=checkBoxes[k];
+            c.checked=true;
+        }
+    });
+    var reverseChecked=document.getElementById("reverseChecked");
+    reverseChecked.addEventListener("click",function () {
+        var checkBoxes=document.getElementsByName("choose");
+        for(var i=0;i<checkBoxes.length;i++){
+            var e=checkBoxes[i];
+            e.checked=!e.checked;
+        }
+    });
+    var noChecked=document.getElementById("noChecked");
+    noChecked.addEventListener("click",function () {
+        var checkBoxes=document.getElementsByName("choose");
+        for(var i=0;i<checkBoxes.length;i++){
+            var e=checkBoxes[i];
+            e.checked=false;
+        }
+    })
+
+</script>
+</html>

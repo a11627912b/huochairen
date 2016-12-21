@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>拖动</title>
+    <style>
+
+        #inner{
+            width: 500px;
+            height: 200px;
+            position: absolute;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<div id="inner">
+    <div id="text">dfjgkfdhgkj</div>
+</div>
+<script>
+    var inner=document.getElementById("inner");
+    var isMouseDown=false;
+    inner.addEventListener("mousedown",function (e) {
+        e.preventDefault();
+        var mouseX=e.pageX;
+        var mouseY=e.pageY;
+        isMouseDown=true;
+            inner.style.left=mouseX-250+"px";
+            inner.style.top=mouseY-100+"px";
+    });
+    inner.addEventListener("mousemove",function (e) {
+        var mouseX=e.pageX;
+        var mouseY=e.pageY;
+        if(isMouseDown){
+            inner.style.left=mouseX-250+"px";
+            inner.style.top=mouseY-100+"px";
+        }
+    });
+    inner.addEventListener("mouseup",function () {
+        isMouseDown=false;
+    });
+    var text=document.getElementById("text");
+    text.addEventListener("mousedown",function (e) {
+        e.stopPropagation();
+    });
+</script>
+</body>
+</html>
