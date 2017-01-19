@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>angular.js</title>
+</head>
+<body>
+<div ng-app="mainModel" ng-controller="mainController">
+    <input ng-model="output" type="text" title="input">
+    <div>{{output}}</div>
+    <div>当前时间为：
+        <span ng-bind="now"></span>
+        {{now}}
+    </div>
+    <div ng-repeat="s in students">{{s}}</div>
+    <span>姓名 &nbsp;性别 职位 标签</span>
+    <div ng-repeat="t in teacher">
+        <span>{{t.name}}</span>
+        <span>{{t.gender}}</span>
+        <span>&nbsp;{{t.occupation}}</span>
+        <span>&nbsp;{{t.special}}</span>
+    </div>
+
+
+    <div ng-controller="childController">
+    </div>
+
+</div>
+<script src="node_modules/angular/angular.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

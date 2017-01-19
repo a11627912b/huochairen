@@ -17,16 +17,16 @@
 
 
 
-    var firstMsg="global";/*默认调用，this就是Window对象*/
+    var firstMsg="global";
     function output() {
         document.write(this.firstMsg);
     }
-    output();
+    output();/*默认调用，this就是Window对象*/
 
 
 
 
-    var computer={/*引式指定this的调用，*/
+    var computer={
         message:"coming message",
         output:function () {
             document.write(this.message);
@@ -37,7 +37,7 @@
         }
     };
     computer.input("Invoke function by object!");
-    computer.output();
+    computer.output();/*隐式指定this的调用，*/
 
 
 
@@ -59,7 +59,7 @@
     var littleBlackFn= Animal.bind(littleBlack,[30]);
     var littleBlack3=littleBlackFn();
     var data = JSON.stringify(littleBlack);
-    document.write(data);
+    document.write(data);/*显式指定this调用函数*/
 
 
 
